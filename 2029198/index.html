@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Types of Inheritance</title>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1056.0" data-gr-ext-installed="">
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="java.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Types of Inheritance (Supported in JAVA)</h5>
+                    <p>Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object. </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="12.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Keyword for Inheritance</h5>
+                    <p>extends is the keyword used to inherit the properties of a class.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="6.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>What You Can Do in a Subclass</h5>
+                    <p>A subclass inherits all of the public and protected members of its parent, no matter what package the subclass is in. If the subclass is in the same package as its parent, it also inherits the package-private members of the parent. You can use the inherited members as is, replace them, hide them, or supplement them with new members:</p>
+
+                        <ul>
+                        <li>The inherited fields can be used directly, just like any other fields.</li>
+                        <li>You can declare a field in the subclass with the same name as the one in the superclass, thus hiding it (not recommended).
+                        You can declare new fields in the subclass that are not in the superclass.</li>
+                        <li>The inherited methods can be used directly as they are.</li>
+                        <li>You can write a new instance method in the subclass that has the same signature as the one in the superclass, thus overriding it.</li>
+                        <li>You can write a new static method in the subclass that has the same signature as the one in the superclass, thus hiding it.</li>
+                        <li>You can declare new methods in the subclass that are not in the superclass.</li>
+                        <li>You can write a subclass constructor that invokes the constructor of the superclass, either implicitly or by using the keyword super.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <main>
+
+
+<!------------------------------------------------------------------------------------------------------------------------>
+
+        <div class="container my-3">
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Single Inheritance</title>
+                        <rect width="100%" height="100%" fill="#777" data-darkreader-inline-fill=""
+                            style="--darkreader-inline-fill:#51575b;"></rect><text x="50%" y="50%" fill="#777" dy=".3em"
+                            data-darkreader-inline-fill="" style="--darkreader-inline-fill:#8d857a;"></text>
+                    </svg>
+
+                    <h2>Single Inheritance</h2>
+                    <p>When a class inherits another class, it is known as a single inheritance. In the example given below, Dog class inherits the Animal class, so there is the single inheritance.</p>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Multilevel Inheritance</title>
+                        <rect width="100%" height="100%" fill="#777" data-darkreader-inline-fill=""
+                            style="--darkreader-inline-fill:#233e4f;"></rect><text x="50%" y="50%" fill="#777" dy=".3em"
+                            data-darkreader-inline-fill="" style="--darkreader-inline-fill:#5f4623;"></text>
+                    </svg>
+
+                    <h2>Multilevel Inheritance</h2>
+                    <p>When there is a chain of inheritance, it is known as multilevel inheritance. As you can see in the example given below, BabyDog class inherits the Dog class which again inherits the Animal class, so there is a multilevel inheritance.
+                    </p>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Hierarchical</title>
+                        <rect width="100%" height="100%" fill="#777" data-darkreader-inline-fill=""
+                            style="--darkreader-inline-fill:#51575b;"></rect><text x="50%" y="50%" fill="#777" dy=".3em"
+                            data-darkreader-inline-fill="" style="--darkreader-inline-fill:#8d857a;"></text>
+                    </svg>
+
+                    <h2>Hierarchical</h2>
+                    <p>When two or more classes inherits a single class, it is known as hierarchical inheritance. In the example given below, Dog and Cat classes inherits the Animal class, so there is hierarchical inheritance.</p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Multiple Inheritance</title>
+                    <rect width="100%" height="100%" fill="#777" data-darkreader-inline-fill=""
+                        style="--darkreader-inline-fill:#51575b;"></rect><text x="50%" y="50%" fill="#777" dy=".3em"
+                        data-darkreader-inline-fill="" style="--darkreader-inline-fill:#8d857a;"></text>
+                </svg>
+
+                <h2>Hybrid Inheritance</h2>
+                <p>WWhen two or more classes inherits a single class, it is known as hierarchical inheritance. In the example given below, Dog and Cat classes inherits the Animal class, so there is hierarchical inheritance.</p>
+            </div>
+        </div>
+                
+    
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Single Inheritance</h2>
+        <pre class ="lead"><br>
+        class Employee
+        {
+            float salary=40000; 
+        }
+
+        class Programmer extends Employ
+        {
+            int bonus=10000;
+
+            public static void main(String args[])
+            {
+                Programmer p=new Programmer();
+                System.out.println("Programmer salary is:"+p.salary);
+                System.out.println("Bonus of Programmer is:"+p.bonus);
+            }
+        }
+                    </pre>
+                </div>
+                <div class="col-md-5">
+                    <svg></svg>
+                        <img src = "single.jpg"></text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Multilevel Inheritance</h2>
+                    <pre class ="lead"><br>
+        class Animal
+        {
+            void eat()
+            { 
+                System.out.println("eating...");
+            }
+        }
+
+        class Dog extends Animal
+        {
+            void bark()
+            {
+                System.out.println("barking...");
+            }
+        }
+
+        class BabyDog extends Dog
+        {
+            void weep()
+            {                        
+            System.out.println("weeping...");
+            }
+        }
+                
+        class TestInheritance
+        {
+            public static void main(String args[])
+            {
+                BabyDog d=new BabyDog();
+                d.weep();
+                d.bark();
+                d.eat();
+            }
+        }
+                     </pre>
+                </div>
+                <div class="col-md-5">
+                    <svg></svg>
+                        <img src = "multilevel.jpg"></text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Hierarchical Inheritance</h2>
+                    <pre class ="lead"><br>
+        class Animal
+        {  
+            void eat()
+            {
+                System.out.println("eating...");
+            }  
+        }  
+
+        class Dog extends Animal
+        {  
+            void bark()
+            {
+                System.out.println("barking...");
+            }  
+        }  
+
+        class Cat extends Animal
+        {  
+            void meow()
+            {
+                System.out.println("meowing...");
+            }  
+        }  
+
+        class TestInheritance
+        {  
+            public static void main(String args[])
+            {
+                Cat c=new Cat();  
+                c.meow();  
+                c.eat();  
+                //c.bark();//Compilation Time Error  
+            }
+        }  
+                        </pre>
+                </div>
+                <div class="col-md-5">
+                    <svg></svg>
+                        <img src = "hier.jpg"></text>
+                    </svg>
+
+                </div>
+            </div>
+
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Hybrid Inheritance</h2>
+                    <pre class ="lead"><br>
+        class HumanBody
+        {
+            public void displayHuman()
+            {
+                System.out.println("Method defined inside HumanBody class");
+            }
+        
+        }
+
+        interface Male
+        {
+            public void show();
+        }
+
+        interface Female
+        {
+            public void show();
+        }
+                         
+        public class Child extends HumanBody implements Male, Female
+        {
+            public void show()
+            {
+                System.out.println("Implementation of show() method defined in interfaces Male and Female");
+            }  
+                         
+            public void displayChild()
+            {
+                System.out.println("Method defined inside Child class");
+            }
+                         
+            public static void main(String[]args)
+            {
+                Child obj = new Child();
+                System.out.println("Implementation of Hybrid Inheritance in Java");
+                obj.show();
+                obj.displayChild();
+            }
+        }
+                    </pre>
+                </div>
+                <div class="col-md-5">
+                    <svg></svg>
+                        <img src = "hyb.jpg"></text>
+                    </svg>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <footer class="container">
+            <p>Presented By Alok Ranjan, 2029198</p>
+        </footer>
+    </main>
+
+
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    -->
+</body>
+
+</html>
